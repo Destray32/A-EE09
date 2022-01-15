@@ -1,0 +1,59 @@
+.b1, .b3 {
+    width: 25%;
+    height: 200px;
+}
+
+.b2{
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    font-size: 250%;
+}
+
+.b1, .b2, .b3 {
+    float: left;
+}
+
+.blok-glowny{
+    background-color: rgb(0, 0, 128);
+    padding: 60px;
+    text-transform: uppercase;
+}
+
+.stopka1{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+.stopka2{
+    text-align: right;
+    width: 50%;
+    padding-top: 100px;
+    float: left;
+}
+
+body{
+    font-family: Garamond;
+    background-color: rgb(30, 144, 255);
+    color: white;
+}
+
+p{
+    padding: 20px;
+    font-size: 200%;
+    border: 1px solid rgb(192, 192, 192);
+}
+p:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid rgb(192, 192, 192);
+    padding: 10px;
+}
