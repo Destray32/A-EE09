@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl3.css">
+    <script>
+        function f() {
+            let rodzajPaliwa = document.getElementById("rodzaj").value;
+            let iloscLitrow = document.getElementById("litry").value;
+            iloscLitrow = parseFloat(iloscLitrow);
+            rodzajPaliwa = parseFloat(rodzajPaliwa);
+
+            let koszt = 0.0;
+            
+            switch (rodzajPaliwa) {
+                case 1:
+                    koszt = 4.0;
+                    break;
+                case 2:
+                    koszt = 3.5;
+                    break;
+                default:
+                    koszt = 0.0;
+                    break;
+            }
+
+            let wynik = koszt * iloscLitrow;
+            document.getElementById("wynik").innerHTML = "koszt paliwa:" + wynik;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="baner-lewy"><h1>Stacja Paliw</h1></div>
+        <div class="baner-prawy">
+            <a href="stacja.html"><img src="home.png" alt="" srcset=""></a>
+            <a href="obliczenia.html"><img src="znak.png" alt="" srcset=""></a>
+        </div>
+    </div>
+
+    <div class="blok-glowny">
+        <h3>Oblicz koszty paliwa</h3>
+        Rodzaj paliwa (1-benzyna, 2-olej napędowy):
+        <br>
+        <input type="number" name="" id="rodzaj">
+        <br>
+        Ile litrów
+        <br>
+        <input type="number" name="" id="litry">
+        <br>
+        <input type="button" value="OBLICZ" onclick="f();">
+        <div id="wynik"></div>
+    </div>
+
+    <div>
+        <div class="blok-lewy"><a href="kwerendy.txt">Pobierz kwerendy</a></div>
+        <div class="blok-prawy"><img src="samochod.png" alt="samochód" srcset=""></div>
+    </div>
+
+    <footer><p>Stronę opracował: </p></footer>
+</body>
+</html>
