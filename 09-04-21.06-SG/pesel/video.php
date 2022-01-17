@@ -58,7 +58,7 @@
             <?php
                 $zapytanieDwa = mysqli_query($polaczenie, "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE Rodzaje_id = 12;");
                 if (!$zapytanieDwa)
-                    print("zapytanie nieprawidlowe");
+                    print("zapytanie 2 nieprawidlowe");
                 while ($wynik = mysqli_fetch_array($zapytanieDwa))
                     {
                         echo "<div class='skrypt1'><h4>".$wynik["id"].". ".$wynik["nazwa"]."</h4><img src='".$wynik['zdjecie']."' alt='film'><p>".$wynik['opis']."</p></div>";
